@@ -1,0 +1,6 @@
+azure-cognitiveservices-vision-customvision
+matplotlib
+numpy
+streamlit
+openpyxl
+dotenv

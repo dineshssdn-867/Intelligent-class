@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="assets/images/logo.png" type="image/x-png">
+    <title>IntelliSense | Page Not Found</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="IntelliSense logo" class="logo-img"></a> 
+                <span class="logo-text">IntelliSense</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="./project.html">PROJECT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="error-page">
+        <div class="content">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">This Page Doesn't Exist</h2>
+            <p>The page you are looking for might has been removed, had its name changed, or is temporarily unavailable.</p>
+            <img src="assets/images/404.png" alt="404" width="600px" height="500px">
+            <div class="buttons">
+                <button onclick="window.location.href = 'index.html';">Go to Home Page</button>
+                <button onclick="window.location.href='mailto: ceo.intellisense@gmail.com';">Contact Support</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .error-page {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-code {
+            font-size: 100px;
+            margin: 0;
+        }
+
+        .error-message {
+            font-size: 32px;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px; /* Adjust as needed */
+            margin-right: 10px; /* Add spacing between logo and text */
+        }
+
+        .logo-text {
+            font-size: 18px; /* Adjust the font size as needed */
+            color: #fff;
+            font-weight: bold;
+        }
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntelliSense |  About Us</title>
+    <link id='favicon' rel="shortcut icon" href="assets/images/logo.png" type="image/x-png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .team{
+        display: inline-block;
+        text-align: left;
+      }
+      .team img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+      .team h2,h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .team p{
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="assets/images/logo.png" alt="IntelliSense logo" class="logo-img"></a>
+        <span class="logo-text">IntelliSense</span>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./project.html">PROJECT</a></li>
+
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+        <button id="theme-toggle" class="toggle-button">🌞 Day/Night Mode 🌙</button>
+
+
+
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- about us content -->
+
+    <section class="about-us">
+      <div class="row" >
+        <div class="about-col" >
+          <h2>We are India's leading revolutionary <b> Smart Surveillance </b> and <b> Attendance Tracking </b> system.</h2>
+          <p> We are a team of passionate individuals who are working to make the world a better place. We are constantly working to improve our product and make it more accessible to students and teachers. We have a vision to make the world a better place by making the education system more secure and seamless and reducing the burden of teachers. </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="assets/images/team.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+    <h1 style="text-align: center;">Welcome to Our Team - IntelliSense <i class="fa-solid fa fa-users"></i></h1>
+    <br>
+
+    <section>
+        <h2 style="text-align: center; font-size: xx-large;">Our Team Members</h2>
+        <br>
+
+        <div class="team">
+            <img src="assets/images/OCT 440.jpg" alt="CEO's Photo" width="200px" height="200px">
+            <h3>Krishna Agarwal</h3>
+            <p style="text-align: center; font-size: larger;">CEO & Founder</p>
+            <p>Krishna is the visionary leader who founded IntelliSense. With a wealth of experience in Artificial Intelligence and various streams of technology, Krishna drives the strategic direction of the company and inspires the team to achieve greatness.</p>
+        </div>
+    </section>
+
+
+    <section class="footer">
+      <h3>About Us</h3>
+      <p style="text-align: center; font-size: medium;">At IntelliSense, we revolutionize classrooms with smart surveillance and attendance tracking for a secure and seamless learning experience.
+        <br>
+        We are constantly working to improve our product and make it more accessible to students and teachers, also efforts are to make it more innovative and user friendly. We are also working on adding more features to our product to make it more useful for students and teachers. 
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/people/IntelliSense/61553870459494" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/IntelliSenseCo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/intellisenseco" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@IntelliSenseCo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://github.com/IntelliSenseCo" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> by Team IntelliSense</p>
+    </section>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.addEventListener('copy', event => event.preventDefault());
+      document.addEventListener('select', event => event.preventDefault());
+      document.onkeydown = function(e) {
+          if (e.ctrlKey && 
+              (e.keyCode === 67 || 
+               e.keyCode === 85 || 
+              e.keyCode === 117 ||
+              e.keyCode === 83 ||
+              e.keyCode === 123 || 
+              e.keyCode == 86 || 
+              e.keyCode == 190 || 
+              e.keyCode === 73 )) {
+              alert('Apologies for the prevention! Certain keys are off-limits to ensure a better experience.');
+             return false;
+          } else {
+              return true;
+          }
+      };
+    
+      document.addEventListener('contextmenu', event => {
+          alert('Thanks for visiting! Right-click is disabled to enhance your browsing experience. Use the menu to discover more');
+     });
+    </script>
+    
+  </body>
+</html>
