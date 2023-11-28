@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntelliSense |  Conatct Us</title>
+    <link id='favicon' rel="shortcut icon" href="/static/images/logo.png" type="image/x-png">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="/static/assets/images/logo.png" alt="IntelliSense logo" class="logo-img"></a>
+        <span class="logo-text">IntelliSense</span>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./project.html">PROJECT</a></li>
+
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+        <button id="theme-toggle" class="toggle-button">🌞 Day/Night Mode 🌙</button>
+
+
+
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!--------contact us--------->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_tqDVwCDEiugyr6teKajropA3UHcDaF4&q=Courtyard%By%Marriot%Ahmedabad" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!---AIzaSyA_tqDVwCDEiugyr6teKajropA3UHcDaF4        Can Change query as per place-->
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+            <h5>Courtyard By Marriot, Ahmedabad</h5>
+            <p>Ahmedabad, Gujarat, India</p>
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+            <h5>+91 9136091789</h5>
+            <p>Monday to Friday, 8AM to 8PM</p>
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+            <h5>ceo.intellisense@gmail.com</h5>
+            <p>Feel free to drop us an email. We're here to assist you! </p>
+          </span>
+          </div>
+        </div>
+
+
+        <div class="contact-col">
+          <form method="post" enctype="multipart/form-data" action="{{ url_for('emotion_analysis') }}">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h3>About Us</h3>
+      <p style="text-align: center; font-size: medium;">At IntelliSense, we revolutionize classrooms with smart surveillance and attendance tracking for a secure and seamless learning experience.
+        <br>
+        We are constantly working to improve our product and make it more accessible to students and teachers, also efforts are to make it more innovative and user friendly. We are also working on adding more features to our product to make it more useful for students and teachers. 
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/people/IntelliSense/61553870459494" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/IntelliSenseCo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/intellisenseco" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@IntelliSenseCo" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://github.com/IntelliSenseCo" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart"></i> by Team IntelliSense</p>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script type="module" src="assets/js/contact.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/button.js"></script>
+
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.addEventListener('copy', event => event.preventDefault());
+      document.addEventListener('select', event => event.preventDefault());
+      document.onkeydown = function(e) {
+          if (e.ctrlKey && 
+              (e.keyCode === 67 || 
+               e.keyCode === 85 || 
+              e.keyCode === 117 ||
+              e.keyCode === 83 ||
+              e.keyCode === 123 || 
+              e.keyCode == 86 || 
+              e.keyCode == 190 || 
+              e.keyCode === 73 )) {
+              alert('Apologies for the prevention! Certain keys are off-limits to ensure a better experience.');
+             return false;
+          } else {
+              return true;
+          }
+      };
+    
+      document.addEventListener('contextmenu', event => {
+          alert('Thanks for visiting! Right-click is disabled to enhance your browsing experience. Use the menu to discover more');
+     });
+    </script>
+    
+  </body>
+</html
