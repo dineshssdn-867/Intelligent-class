@@ -36,7 +36,7 @@
 
 
       </nav>
-      <h1>Check Anomalus</h1>
+      <h1>Check Attendance</h1>
     </section>
 
     <!--------contact us--------->
@@ -73,11 +73,14 @@
 
 
         <div class="contact-col">
-          <form method="post" enctype="multipart/form-data" action="{{ url_for('anomalous_analysis') }}">
+          <form method="post" enctype="multipart/form-data" action="{{ url_for('attendance_check') }}">
             <input type="file" name="file">
             <input type="submit" value="Upload">
           </form>
         </div>
+        <br>
+        <br>
+        <h1>{{result}}</h1>
       </div>
     </section>
 
